@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Functions and Calculators</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <h1>How will congestion pricing impact your wallet?</h1>
+      <p>The following calculator will help you estimate how much of an affect New York City's latest proposed congestion pricing will have on you. Choose the time and date that you well be entering Manhattan below 60th St.</p>
+
+      <p>This is an estimate based on a 2018 advisory panel report and is designed to show the relative impact rather than an exact charge.</p>
+
+
+
+
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th>Monday</th>
+              <th><input type="radio" id="morn" name="monday" value="8.50">
+                <label for="morn">Apple</label></th>
+              <th> <input type="radio" id="rush" name="monday" value="11.50">
+                <label for="rush">Banana</label></th>
+              <th><input type="radio" id="day" name="monday" value="8.50">
+                <label for="day">Orange</label></th>
+              <th><input type="radio" id="night" name="monday" value="5.50">
+                <label for="night">Cherry</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th>Monday</th>
+              <th><input type="radio" id="radioKiwi" name="radioFruit" value="8.50">
+                <label for="radioKiwi">Kiwi</label></th>
+              <th> <input type="radio" id="radioGuava" name="radioFruit" value="11.50">
+                <label for="radioGuava">Guava</label></th>
+              <th><input type="radio" id="radioDragon" name="radioFruit" value="8.50">
+                <label for="radioDragon">Dragon</label></th>
+              <th><input type="radio" id="radioGrape" name="radioFruit" value="5.50">
+                <label for="radioGrape">Grape</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+
+      <tr>
+        <th>Wednesday</th>
+        <th><button class="morn" name="" value="8.50">5 a.m. - 6 a.m.</button></th>
+        <th><button class="rush" name="" value="11.50">6 a.m. - 9 a.m.</button></th>
+        <th><button class="day" name="" value="8.50">9 a.m. - 11 p.m.</button></th>
+        <th><button class="night" name="" value="5.50">11 p.m. - 5 a.m.</button></th>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <th><button class="morn" name="" value="8.50">5 a.m. - 6 a.m.</button></th>
+        <th><button class="rush" name="" value="11.50">6 a.m. - 9 a.m.</button></th>
+        <th><button class="day" name="" value="8.50">9 a.m. - 11 p.m.</button></th>
+        <th><button class="night" name="" value="5.50">11 p.m. - 5 a.m.</button></th>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <th><button class="morn" name="" value="8.50">5 a.m. - 6 a.m.</button></th>
+        <th><button class="rush" name="" value="11.50">6 a.m. - 9 a.m.</button></th>
+        <th><button class="day" name="" value="8.50">9 a.m. - 11 p.m.</button></th>
+        <th><button class="night" name="" value="5.50">11 p.m. - 5 a.m.</button></th>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <th><button class="wkdusk" name="" value="8.50">noon - 10 p.m.</button></th>
+        <th><button class="wkdawn" name="" value="5.50">10 p.m. - noon</button></th>
+      </tr>
+      <tr>
+        <th>Sunday</th>
+        <th><button class="wkdusk" name="" value="8.50">noon - 10 p.m.</button></th>
+        <th><button class="wkdawn" name="" value="5.50">10 p.m. - noon</button></th>
+      </tr>
+      </table>
+      <br>
+      <button class="calculate">Compare</button>
+
+      <div id="pre_total" class="total">
+        <h2>Cost before tariffs</h2>
+        <span></span>
+      </div>
+
+      <div id="post_total" class="total">
+        <h2>Cost after tariffs</h2>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>
