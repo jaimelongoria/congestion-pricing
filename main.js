@@ -24,17 +24,16 @@ $(document).ready(function () {
 		let finalsat = parseFloat(sat);
 		let finalsun = parseFloat(sun);
 
-		console.log(finalsun)
-
 		let finalvalue = finalmon + finaltues + finalwed + finalthurs + finalfri + finalsat + finalsun;
 		let avalue = finalvalue * 52
 		let mvalue = avalue / 12
-		console.log(finalvalue);
 		console.log("finalvalue");
-		console.log(avalue);
+		console.log(finalvalue);
 		console.log("avalue");
-		console.log(mvalue);
+		console.log(avalue);
 		console.log("mvalue");
+		console.log(mvalue);
+
 
 		$("#tcost").find("span").text(finalvalue);
 		$("#mcost").find("span").text(mvalue);
