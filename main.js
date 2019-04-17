@@ -40,4 +40,12 @@ $(document).ready(function () {
 		$("#acost").find("span").text(avalue);
 
 	});
+
+	$('#rst-btn').on('click', function () {
+		$('input[type=radio]').prop('checked', function () {
+			return this.getAttribute('checked') == 'checked';
+		});
+
+	});
+
 });
