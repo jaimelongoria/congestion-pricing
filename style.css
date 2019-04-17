@@ -31,6 +31,14 @@ html, body {
     border: 0px;
 }
 
+.cost {
+    display: none;
+}
+
+.cost.active {
+    display: block;
+}
+
 .radio-toolbar {
     margin: 10px;
 }

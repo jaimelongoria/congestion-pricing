@@ -1,12 +1,13 @@
 $(document).ready(function () {
-	$('#btn').click(function () {
-		var mon = $('input[name=monday]:checked').val();
-		var tues = $('input[name=tuesday]:checked').val();
-		var wed = $('input[name=wednesday]:checked').val();
-		var thur = $('input[name=thursday]:checked').val();
-		var fri = $('input[name=friday]:checked').val();
-		var sat = $('input[name=saturday]:checked').val();
-		var sun = $('input[name=sunday]:checked').val();
+	$("#btn").click(function () {
+		var mon = $("input[name=monday]:checked").val();
+		var tues = $("input[name=tuesday]:checked").val();
+		var wed = $("input[name=wednesday]:checked").val();
+		var thur = $("input[name=thursday]:checked").val();
+		var fri = $("input[name=friday]:checked").val();
+		var sat = $("input[name=saturday]:checked").val();
+		var sun = $("input[name=sunday]:checked").val();
+		$(".cost").addClass("active");
 
 		console.log(mon);
 		console.log(tues);
@@ -41,10 +42,12 @@ $(document).ready(function () {
 
 	});
 
-	$('#rst-btn').on('click', function () {
-		$('input[type=radio]').prop('checked', function () {
-			return this.getAttribute('checked') == 'checked';
+	$("#rst-btn").on("click", function () {
+		$("input[type=radio]").prop("checked", function () {
+			return this.getAttribute("checked") == "checked";
 		});
+
+		$(".cost.active").removeClass("active");
 
 	});
 
