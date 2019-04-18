@@ -43,8 +43,6 @@ $(document).ready(function () {
 		$("span.mcost").text(mvalue);
 		$("span.acost").text(avalue);
 
-
-
 		$("span.animation-one").addClass("fadein");
 		setTimeout(function () {}, 2000);
 

@@ -17,6 +17,44 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.imgcred {
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    color: #999999;
+    line-height: 0.8em;
+}
+
+a {
+    color: #999999;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.dateline, .byline {
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    color: #999999;
+    line-height: 0.8em;
 }
 
 .container {
@@ -88,6 +126,7 @@ html, body {
 }
 
 .btn-group button {
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
     display: inline-block;
     background-color: #FFFFFF;
     padding: 12px 20px;
@@ -150,13 +189,8 @@ html, body {
         border-radius: 6px;
     }
 
-    .btn-group {
-        margin: auto;
-        width: 28%;
-        padding: 20px;
-    }
-
     .btn-group button {
+        font-family: 'PT Serif', Georgia, "Times New Roman", serif;
         display: inline-block;
         background-color: #FFFFFF;
         padding: 12px 20px;
@@ -168,6 +202,16 @@ html, body {
         color: #000000;
         border-radius: 6px;
     }
+
+    .btn-group button:hover {
+        background-color: #AA0000;
+        color: #FFFFFF;
+        border: 1px solid #AA0000;
+    }
+}
+
+.occupy {
+    padding: 50px;
 }
 
 @media(min-width: 729px) {
