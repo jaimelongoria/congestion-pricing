@@ -64,12 +64,13 @@ p {
 }
 
 .select-table-cells {
-    width: 22%;
+    width: 40%;
     display: inline-block;
 }
 
 .day-table-cells {
-    width: 12%;
+    width: 22%;
+    font-size: 13px;
 }
 
 #moblank #tublank #weblank #thblank #frblank #sablank #sublank {
@@ -97,14 +98,14 @@ p {
 .radio-toolbar label {
     display: inline-block;
     background-color: #FFFFFF;
-    padding: 12px 44px;
-    font-size: .8em;
+    padding: 2.5px 20px;
+    font-size: 13px;
     border: 1px solid #000000;
     border-radius: 0px;
     margin: 0px;
     cursor: pointer;
     color: #000000;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .radio-toolbar label:hover {
@@ -120,23 +121,23 @@ p {
 }
 
 .btn-group {
-    margin: auto;
-    width: 28%;
+    margin: 17%;
+    width: 100%;
     padding: 20px;
 }
 
 .btn-group button {
-    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
     display: inline-block;
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
     background-color: #FFFFFF;
     padding: 12px 20px;
-    font-size: .8em;
+    font-size: 13px;
     border: 1px solid #000000;
     border-radius: 0px;
     margin: 0px;
     cursor: pointer;
     color: #000000;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .btn-group button:hover {
@@ -180,7 +181,7 @@ p {
         display: inline-block;
         background-color: #FFFFFF;
         padding: 12px 44px;
-        font-size: .8em;
+        font-size: .75em;
         border: 1px solid #000000;
         border-radius: 0px;
         margin: 0px;
@@ -194,7 +195,7 @@ p {
         display: inline-block;
         background-color: #FFFFFF;
         padding: 12px 20px;
-        font-size: .8em;
+        font-size: .75em;
         border: 1px solid #000000;
         border-radius: 0px;
         margin: 0px;
@@ -208,12 +209,58 @@ p {
         color: #FFFFFF;
         border: 1px solid #AA0000;
     }
-}
 
-.occupy {
-    padding: 50px;
+    .occupy {
+        padding: 50px;
+    }
 }
 
 @media(min-width: 729px) {
+
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .select-table-cells {
+        width: 22%;
+        display: table-cell;
+    }
+
+    .day-table-cells {
+        width: 12%;
+    }
+
+    .radio-toolbar label {
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 44px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button {
+        font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 20px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button:hover {
+        background-color: #AA0000;
+        color: #FFFFFF;
+        border: 1px solid #AA0000;
+    }
+
+    .occupy {
+        padding: 50px;
+    }
 }
