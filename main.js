@@ -25,9 +25,12 @@ $(document).ready(function () {
 		let finalsat = parseFloat(sat);
 		let finalsun = parseFloat(sun);
 
-		let finalvalue = finalmon + finaltues + finalwed + finalthurs + finalfri + finalsat + finalsun;
-		let avalue = finalvalue * 52
-		let mvalue = avalue / 12
+		let rawfinalvalue = finalmon + finaltues + finalwed + finalthurs + finalfri + finalsat + finalsun;
+		let finalvalue = rawfinalvalue.toFixed(2)
+		let rawavalue = rawfinalvalue * 52
+		let avalue = rawavalue.toFixed(2)
+		let rawmvalue = rawavalue / 12
+		let mvalue = rawmvalue.toFixed(2)
 		console.log("finalvalue");
 		console.log(finalvalue);
 		console.log("avalue");
@@ -36,9 +39,20 @@ $(document).ready(function () {
 		console.log(mvalue);
 
 
-		$("#tcost").find("span").text(finalvalue);
-		$("#mcost").find("span").text(mvalue);
-		$("#acost").find("span").text(avalue);
+		$("span.tcost").text(finalvalue);
+		$("span.mcost").text(mvalue);
+		$("span.acost").text(avalue);
+
+
+
+		$("span.animation-one").addClass("fadein");
+		setTimeout(function () {}, 2000);
+
+		$("span.animation-two").addClass("fadein");
+		setTimeout(function () {}, 2000);
+
+		$("span.animation-three").addClass("fadein");
+		setTimeout(function () {}, 2000);
 
 	});
 
