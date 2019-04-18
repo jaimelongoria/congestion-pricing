@@ -138,7 +138,7 @@ p {
 }
 
 .btn-group {
-    margin: auto;
+    margin: 0 auto;
     width: 35%;
     padding: 10px;
     align-items: center;
@@ -152,7 +152,7 @@ p {
     padding: 12px 19px;
     font-size: 13px;
     border: 1px solid #000000;
-    margin: 0px;
+    margin: 0 auto;
     cursor: pointer;
     color: #000000;
     border-radius: 4px;
@@ -167,7 +167,7 @@ p {
     padding: 12px 30px;
     font-size: 13px;
     border: 1px solid #000000;
-    margin: 0px;
+    margin: 0 auto;
     cursor: pointer;
     color: #000000;
     border-radius: 4px;
@@ -236,7 +236,7 @@ p {
     }
 
     .btn-group {
-        margin: auto;
+        margin: 0 auto;
         width: 25%;
         padding: 10px;
         align-items: center;
@@ -250,7 +250,7 @@ p {
         padding: 12px 19px;
         font-size: 13px;
         border: 1px solid #000000;
-        margin: 0px;
+        margin: 0 auto;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
@@ -265,7 +265,7 @@ p {
         padding: 12px 30px;
         font-size: 13px;
         border: 1px solid #000000;
-        margin: 0px;
+        margin: 0 auto;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
@@ -305,7 +305,7 @@ p {
         padding: 12px 20px;
         font-size: .75em;
         border-radius: 0px;
-        margin: 0px;
+        margin: 0 auto;
         cursor: pointer;
         color: #000000;
         border-radius: 6px;
