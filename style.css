@@ -17,12 +17,74 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.imgcred {
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    color: #999999;
+    line-height: 0.8em;
+}
+
+a {
+    color: #999999;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.dateline, .byline {
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    color: #999999;
+    line-height: 0.8em;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 5px;
+}
+
+.select-table-cells {
+    width: 40%;
+    display: inline-block;
+}
+
+.day-table-cells {
+    width: 22%;
+    font-size: 13px;
+}
+
+#moblank #tublank #weblank #thblank #frblank #sablank #sublank {
+    display: none;
+    padding: 0px 0px;
+    border: 0px;
+}
+
+.cost {
+    display: none;
+}
+
+.cost.active {
+    display: block;
 }
 
 .radio-toolbar {
@@ -36,25 +98,169 @@ html, body {
 .radio-toolbar label {
     display: inline-block;
     background-color: #FFFFFF;
-    padding: 10px 40px;
-    font-size: 16px;
-    border: 1px solid #89B7FF;
+    padding: 2.5px 20px;
+    font-size: 13px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    margin: 0px;
+    cursor: pointer;
+    color: #000000;
     border-radius: 4px;
 }
 
 .radio-toolbar label:hover {
-    background-color: #B9D4FF;
+    background-color: #C23F48;
+    color: #FFFFFF;
+    border: 1px solid #C23F48;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-    background-color: #89B7FF;
-    border-color: #89B7FF;
+    background-color: #AA0000;
+    border-color: #AA0000;
+    color: #FFFFFF;
+}
+
+.btn-group {
+    margin: 17%;
+    width: 100%;
+    padding: 20px;
+}
+
+.btn-group button {
+    display: inline-block;
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+    background-color: #FFFFFF;
+    padding: 12px 20px;
+    font-size: 13px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    margin: 0px;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.btn-group button:hover {
+    background-color: #AA0000;
+    color: #FFFFFF;
+    border: 1px solid #AA0000;
+}
+
+.fadein {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Tablet/Desktop overrides */
 @media(min-width: 681px) {
 
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    @media(min-width: 729px) {
-        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .select-table-cells {
+        width: 22%;
+        display: table-cell;
     }
+
+    .day-table-cells {
+        width: 12%;
+    }
+
+    .radio-toolbar label {
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 44px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button {
+        font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 20px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button:hover {
+        background-color: #AA0000;
+        color: #FFFFFF;
+        border: 1px solid #AA0000;
+    }
+
+    .occupy {
+        padding: 50px;
+    }
+}
+
+@media(min-width: 729px) {
+
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .select-table-cells {
+        width: 22%;
+        display: table-cell;
+    }
+
+    .day-table-cells {
+        width: 12%;
+    }
+
+    .radio-toolbar label {
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 44px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button {
+        font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 20px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button:hover {
+        background-color: #AA0000;
+        color: #FFFFFF;
+        border: 1px solid #AA0000;
+    }
+
+    .occupy {
+        padding: 50px;
+    }
+}
