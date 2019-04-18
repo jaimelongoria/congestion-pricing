@@ -121,29 +121,41 @@ p {
 }
 
 .btn-group {
-    margin: 17%;
-    width: 100%;
-    padding: 20px;
+    margin: auto;
+    width: 35%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-group button {
-    display: inline-block;
+.calculate {
+    display: flex;
     font-family: 'PT Serif', Georgia, "Times New Roman", serif;
     background-color: #FFFFFF;
-    padding: 12px 20px;
+    padding: 12px 19px;
     font-size: 13px;
     border: 1px solid #000000;
-    border-radius: 0px;
     margin: 0px;
     cursor: pointer;
     color: #000000;
     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-group button:hover {
-    background-color: #AA0000;
-    color: #FFFFFF;
-    border: 1px solid #AA0000;
+.reset {
+    display: flex;
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+    background-color: #FFFFFF;
+    padding: 12px 30px;
+    font-size: 13px;
+    border: 1px solid #000000;
+    margin: 0px;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
 .fadein {
@@ -190,24 +202,42 @@ p {
         border-radius: 6px;
     }
 
-    .btn-group button {
+    .btn-group {
+        margin: auto;
+        width: 25%;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calculate {
+        display: flex;
         font-family: 'PT Serif', Georgia, "Times New Roman", serif;
-        display: inline-block;
         background-color: #FFFFFF;
-        padding: 12px 20px;
-        font-size: .75em;
+        padding: 12px 19px;
+        font-size: 13px;
         border: 1px solid #000000;
-        border-radius: 0px;
         margin: 0px;
         cursor: pointer;
         color: #000000;
-        border-radius: 6px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
     }
 
-    .btn-group button:hover {
-        background-color: #AA0000;
-        color: #FFFFFF;
-        border: 1px solid #AA0000;
+    .reset {
+        display: flex;
+        font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+        background-color: #FFFFFF;
+        padding: 12px 30px;
+        font-size: 13px;
+        border: 1px solid #000000;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
     }
 
     .occupy {
@@ -232,7 +262,6 @@ p {
         background-color: #FFFFFF;
         padding: 12px 44px;
         font-size: .75em;
-        border: 1px solid #000000;
         border-radius: 0px;
         margin: 0px;
         cursor: pointer;
@@ -246,7 +275,6 @@ p {
         background-color: #FFFFFF;
         padding: 12px 20px;
         font-size: .75em;
-        border: 1px solid #000000;
         border-radius: 0px;
         margin: 0px;
         cursor: pointer;
