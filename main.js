@@ -8,6 +8,7 @@ $(document).ready(function () {
 		var sat = $("input[name=saturday]:checked").val();
 		var sun = $("input[name=sunday]:checked").val();
 		$(".cost").addClass("active");
+		$(".occupy").addClass("deactive");
 
 		console.log(mon);
 		console.log(tues);
@@ -46,10 +47,10 @@ $(document).ready(function () {
 		$("span.animation-one").addClass("fadein");
 		setTimeout(function () {}, 2000);
 
-		$("span.animation-two").addClass("fadein");
+		$("span.animation-two").addClass("fadein2");
 		setTimeout(function () {}, 2000);
 
-		$("span.animation-three").addClass("fadein");
+		$("span.animation-three").addClass("fadein3");
 		setTimeout(function () {}, 2000);
 
 	});
@@ -60,6 +61,8 @@ $(document).ready(function () {
 		});
 
 		$(".cost.active").removeClass("active");
+		$(".occupy").removeClass("deactive");
+
 
 	});
 

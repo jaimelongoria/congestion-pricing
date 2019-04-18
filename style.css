@@ -79,8 +79,25 @@ p {
     border: 0px;
 }
 
+.occupy.deactive {
+    display: none;
+}
+
+.occupy {
+    height: 55px;
+    width: 100%;
+    padding: 50px;
+}
+
 .cost {
     display: none;
+    height: 25px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.content {
+    padding-top: 20px;
 }
 
 .cost.active {
@@ -163,7 +180,23 @@ p {
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 2s;
+    animation-duration: .5s;
+}
+
+.fadein2 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+.fadein3 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
 }
 
 @keyframes fadeInOpacity {
@@ -239,10 +272,6 @@ p {
         align-items: center;
         justify-content: center;
     }
-
-    .occupy {
-        padding: 50px;
-    }
 }
 
 @media(min-width: 729px) {
@@ -289,6 +318,10 @@ p {
     }
 
     .occupy {
-        padding: 50px;
+        padding: 60px;
+    }
+
+    .content {
+        margin-top: -55px;
     }
 }
