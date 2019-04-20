@@ -63,6 +63,22 @@ p {
     padding: 5px;
 }
 
+.interactivetxt {
+    font-size: 16px;
+    font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+hr {
+    max-width: 25%;
+}
+
+.space {
+    padding: 25px;
+}
+
 .select-table-cells {
     width: 40%;
     display: inline-block;
@@ -100,6 +116,10 @@ p {
     padding-top: 20px;
 }
 
+.content1 {
+    padding-top: 20px;
+}
+
 .cost.active {
     display: block;
 }
@@ -116,7 +136,7 @@ p {
     display: inline-block;
     background-color: #FFFFFF;
     padding: 2.5px 20px;
-    font-size: 13px;
+    font-size: 14px;
     border: 1px solid #000000;
     border-radius: 0px;
     margin: 0px;
@@ -150,7 +170,7 @@ p {
     font-family: 'PT Serif', Georgia, "Times New Roman", serif;
     background-color: #FFFFFF;
     padding: 12px 19px;
-    font-size: 13px;
+    font-size: 14px;
     border: 1px solid #000000;
     margin: 0 auto;
     cursor: pointer;
@@ -165,7 +185,7 @@ p {
     font-family: 'PT Serif', Georgia, "Times New Roman", serif;
     background-color: #FFFFFF;
     padding: 12px 30px;
-    font-size: 13px;
+    font-size: 14px;
     border: 1px solid #000000;
     margin: 0 auto;
     cursor: pointer;
@@ -188,7 +208,7 @@ p {
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .fadein3 {
@@ -196,7 +216,7 @@ p {
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 @keyframes fadeInOpacity {
@@ -290,7 +310,7 @@ p {
         display: inline-block;
         background-color: #FFFFFF;
         padding: 12px 44px;
-        font-size: .75em;
+        font-size: .7em;
         border-radius: 0px;
         margin: 0px;
         cursor: pointer;
@@ -303,7 +323,7 @@ p {
         display: inline-block;
         background-color: #FFFFFF;
         padding: 12px 20px;
-        font-size: .75em;
+        font-size: .7em;
         border-radius: 0px;
         margin: 0 auto;
         cursor: pointer;
